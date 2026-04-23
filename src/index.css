@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0a10;
+  overscroll-behavior: none;
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont,
+    'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif;
+}
+
+#root {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  height: 100dvh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+
+.spin-slow {
+  animation: spin-slow 4s linear infinite;
+}

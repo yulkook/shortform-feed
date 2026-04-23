@@ -1,0 +1,73 @@
+export const mockVideos = [
+  {
+    id: '1',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+    thumbnail: 'https://picsum.photos/seed/vid1/400/700',
+    title: '믿음으로 나아가라',
+    pastorName: '김요한 목사',
+    user: { id: 'u1', username: '@bunny_official', avatar: 'https://i.pravatar.cc/150?img=1' },
+    caption: '하나님께서 우리를 부르실 때, 두려움 없이 나아가는 믿음 #설교 #믿음 #은혜',
+    music: '오리지널 사운드 - bunny_official',
+    likes: 124800,
+    comments: 3421,
+    shares: 890,
+  },
+  {
+    id: '2',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
+    thumbnail: 'https://picsum.photos/seed/vid2/400/700',
+    title: '하나님의 꿈을 꾸라',
+    pastorName: '이다윗 목사',
+    user: { id: 'u2', username: '@elephant_dream', avatar: 'https://i.pravatar.cc/150?img=2' },
+    caption: '요셉처럼 하나님이 주신 꿈을 붙드는 삶 #요셉 #꿈 #하나님의계획',
+    music: 'Elephants Dream OST',
+    likes: 98200,
+    comments: 1870,
+    shares: 2310,
+  },
+  {
+    id: '3',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
+    thumbnail: 'https://picsum.photos/seed/vid3/400/700',
+    title: '성령의 불로 타오르라',
+    pastorName: '박사무엘 목사',
+    user: { id: 'u3', username: '@blazing_views', avatar: 'https://i.pravatar.cc/150?img=3' },
+    caption: '오순절의 불꽃이 오늘 우리 안에 임하기를 🔥 #성령 #부흥 #오순절',
+    music: 'Trending Beat - DJ Hype',
+    likes: 312000,
+    comments: 8900,
+    shares: 15600,
+  },
+  {
+    id: '4',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
+    thumbnail: 'https://picsum.photos/seed/vid4/400/700',
+    title: '광야에서 만나는 하나님',
+    pastorName: '최모세 목사',
+    user: { id: 'u4', username: '@escape_daily', avatar: 'https://i.pravatar.cc/150?img=4' },
+    caption: '가장 힘든 광야 속에서도 하나님은 우리와 함께하십니다 #광야 #위로 #동행',
+    music: 'Ocean Waves Chill - Lofi',
+    likes: 56700,
+    comments: 942,
+    shares: 3200,
+  },
+  {
+    id: '5',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4',
+    thumbnail: 'https://picsum.photos/seed/vid5/400/700',
+    title: '동행의 여정',
+    pastorName: '정베드로 목사',
+    user: { id: 'u5', username: '@subarulife', avatar: 'https://i.pravatar.cc/150?img=5' },
+    caption: '우리의 길을 인도하시는 주님과 함께하는 모든 여정 🚗 #동행 #인도하심 #감사',
+    music: 'Road Trip Vibes - Indie',
+    likes: 203400,
+    comments: 5670,
+    shares: 7800,
+  },
+]
+
+export function formatCount(num) {
+  if (num >= 1_000_000) return (num / 1_000_000).toFixed(1) + 'M'
+  if (num >= 1_000) return (num / 1_000).toFixed(1) + 'K'
+  return String(num)
+}
